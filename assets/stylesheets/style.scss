@@ -1,0 +1,445 @@
+---
+---
+
+// Reset & Mixins ———————————————————————————— •
+@charset "UTF-8";
+
+@import
+  'globals/mixins',
+  'globals/reset';
+
+
+// Base Styles ——————————————————————————————— •
+html {
+  background: $color-background;
+}
+
+body {
+  @include border-box;
+  @include font-smoothing(antialiased);
+  color: $color-text;
+  font-family: $font-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  position: relative;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-align: center;
+
+  @include media(small) {
+    font-size: 1.0rem;
+  }
+}
+
+a {
+  color: $color-link;
+  &:hover { color: $color-link-hover; }
+  &:active { color: $color-text; }
+}
+
+h1 {
+  font: 1.9rem/1.2 $font-serif;
+  margin-bottom: 1.8rem;
+  font-weight: bold;
+
+  @include media(small) {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: bold;
+
+  @include media(small) {
+    font-size: 1.4rem;
+  }
+}
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-weight: bold;
+
+  @include media(small) {
+    font-size: 1.1rem;
+  }
+}
+
+hr {
+  border-top: 4px double rgba(0,0,0,0.2);
+  height: 0;
+  margin: 2rem -1rem;
+  clear: left;
+}
+
+p {
+  margin-bottom: 1.6rem;
+}
+
+ul, ol {
+  padding-left: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+// SITE LAYOUT
+.header {
+  @include clearfix;
+  padding: 1.5rem 0;
+  border-bottom: 0px solid #548e76;
+}
+
+.logo {
+  max-width: 240px;
+  margin: 0 auto;
+
+  img { width: 100%; }
+
+  @include media(small) {
+    max-width: 200px;
+  }
+
+  a { text-decoration: none; }
+
+  figcaption {
+    color: $color-link;
+    text-transform: uppercase;
+    font-family: $font-sans;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 0rem;
+    padding: 0 1.5rem;
+    text-align: center;
+    line-height: 1;
+
+    @include media(small) {
+      padding: 0 0;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  @include media(large) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+
+  @include media(large) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  strong {
+    display: block;
+
+    @include media(medium) {
+      display: none;
+    }
+  }
+}
+
+.site-nav-items {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__item {
+  display: inline-block;
+  line-height: 1.3;
+  margin: 0;
+  border-bottom: 1px solid transparent;
+
+  &:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+
+  &.active,
+  &:hover {
+    border-color: $color-link;
+  }
+
+  @include media(medium) {
+    margin: 0 2.5rem;
+  }
+
+  a { text-decoration: none; }
+}
+
+.site-nav-link__secondary {
+  display: block;
+  font-size: 1rem;
+  color: $color-red-text;
+
+  @include media(small) {
+    display: none;
+  }
+}
+
+.site-nav-link__primary {
+  color: $color-link;
+  text-transform: uppercase;
+  font-family: $font-sans;
+  font-weight: bold;
+  font-size: 1rem;
+
+  @include media(medium) {
+    font-size: 1.2rem;
+  }
+}
+
+.site-nav__item--hours {
+  @include media(large) {
+    display: none;
+  }
+}
+
+.site-nav-events__big {
+  @include media(small) {
+    display: none;
+  }
+}
+
+.site-nav-events__small {
+  @include media(medium) {
+    display: none;
+  }
+}
+
+.byline {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+main {
+  @include border-box;
+  @include clearfix;
+  display: block;
+  padding: 0 0.8rem 4rem;
+  text-align: left;
+  background: $color-body;
+}
+
+.page-content {
+  @include media(large) {
+    min-height: 20rem;
+    padding: 1rem 4rem 1rem;
+  }
+}
+
+.site-footer {
+  @include clearfix;
+  display: block;
+  padding: 2rem 0;
+  font-family: $font-sans;
+  background: #5193B3;
+
+  @include media(medium) {
+    padding: 2rem 6rem 2rem;
+  }
+}
+
+/* site nav in footer */
+.site-nav--small {
+  display: block;
+
+  .site-nav__item {
+    @include media(medium) {
+      margin: 0 0 0 1rem;
+    }
+
+    &:first-child { margin-left: 0 !important; }
+  }
+
+  .site-nav-link__primary {
+    font-size: 0.8rem;
+
+    @include media(medium) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.copyright {
+  font: 0.75rem / 1.2 $font-sans;
+  margin: 3rem 0 0;
+  color: $color-white-text;
+}
+
+// UTLITY CLASSES
+.flush {
+  margin: 0;
+}
+
+.flush--bottom {
+  margin-bottom: 0 !important;
+}
+
+.push {
+  margin: 0.8rem 0;
+}
+
+.push-half--bottom {
+  margin-bottom: 0.4rem !important;
+}
+
+.push--left {
+  margin-left: 1.5rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.hide-on-mobile {
+  @include media(small) {
+    display: none;
+  }
+}
+
+.sans { font: 1rem/1.2 $font-sans; }
+
+
+
+// HOME PAGE
+
+
+.home-introduction {
+
+  .left-column {
+    float: left;
+    width: 25%;
+
+    @include media(small) {
+      display: none;
+    }
+  }
+
+  .home-header {
+    padding: 1.3rem 0; text-align: center;
+    border-bottom: 2px dotted #F12625
+  }
+
+  .home-contact {
+    color: $color-red-text;
+  }
+
+  .home-schedule {
+    color: $color-red-text
+  }
+
+  .home-hours {
+    list-style: none;
+    padding-left: 0;
+    color: $color-text;
+  }
+
+  .home-directions {
+    color: $color-red-text;
+    margin-top: 20px;
+
+    .addr-input {
+      width: 100%;
+      height: 2.5rem;
+      border-radius: 5px;
+      border-style: none;
+      box-shadow: inset 0 1px 5px rgba(0,0,0,0.2) !important;
+      margin-bottom: 1rem;
+      padding-left: 0.3rem;
+    }
+    .addr-submit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FCE49E;
+      color: #5193B3;
+      width: 100%;
+      border-radius: 5px;
+      font-family: $font-sans;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 0.8em 0;
+      border-style: none;
+      border: 0;
+      border-bottom: 4px solid rgba(0,0,0,0.3);
+      outline: none;
+
+      &:hover {
+        background: #E6D088;
+      }
+      &:active {
+        border: none;
+      }
+    }
+  }
+
+  @include media(medium) {
+    padding: 1rem 1.5rem 1rem;
+  }
+
+  @include media(large) {
+    padding: 1rem 6rem 1rem;
+  }
+}
+
+.home-content {
+  float: center;
+  width: 100%;
+  p {
+    font-family: $font-sans;
+    color: $color-text;
+  }
+
+  .home-statement{
+    color: #5193B3;
+  }
+
+  @include media(large) {
+    float: right;
+    width: 75%;
+  }
+
+  .home-testimonials {
+    margin-bottom: 1rem;
+  }
+}
+
+
+// MAX-WIDTH/TEXTUAL PAGES
+.page-content--max-width {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+
+// iOS Font Sizing —————————————————————— •
+@media screen and (max-device-width: 480px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+  }
+}
+
+// Print styles
+@media print {
+  .site-nav,
+  .page-nav,
+  .pdf-icon,
+  .site-footer { display: none; }
+
+  .header,
+  .home {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}

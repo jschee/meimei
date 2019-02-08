@@ -1,0 +1,16 @@
+title: Mei Mei's Chinese Restaurant
+description: "Mei Mei's Chinese Restaurant - Over 40 years of quality chinese food and take out."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+destination: public
+exclude: [public, Rakefile, README.md]
+
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+sass:
+  style:    :compressed
+  sass_dir: assets/stylesheets
