@@ -1,0 +1,61 @@
+- name: Crispy Egg Roll (Pork) (1 each)
+  number: 9
+  pt:
+  qt: $1.85
+
+
+- name: Roast Pork Sliced or Pork Ends (Small)
+  number: 10
+  pt:
+  qt: $6.35
+
+- name: Roast Pork Sliced or Pork Ends (Large)
+  number: 11
+  pt:
+  qt: $12.70
+
+- name: Barbecued Spare Ribs (Small - 5)
+  number: 12
+  pt:
+  qt: $6.95
+
+- name: Barbecued Spare Ribs (Large - 10)
+  number: 13
+  pt:
+  qt: $13.85
+
+- name: Fried Wonton (12)
+  number: 14
+  pt:
+  qt: $5.75
+
+- name: Shrimp Toast (2)
+  number: 15
+  pt:
+  qt: $3.40
+
+- name: Fantail Shrimps (3)
+  number: 16
+  pt:
+  qt: $4.50
+
+- name: Crab Stick (2)
+  number: 17
+  pt:
+  qt: $2.10
+
+
+- name: Fried or Steamed Dumpling (10)
+  number: 18
+  pt:
+  qt: $7.25
+
+- name: Chicken Wings (4)
+  number: 19
+  pt:
+  qt: $4.60
+
+- name: Chicken Wing w. Pork Fried Rice or Fried Banana
+  number: 20
+  pt:
+  qt: $7.35

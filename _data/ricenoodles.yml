@@ -1,0 +1,35 @@
+- name: Vegetable Rice Noodle or Ho Fun
+  number: 65
+  pt:
+  qt: $7.80
+
+- name: Pork Rice Noodle or Ho Fun
+  number: 66
+  pt:
+  qt: $8.60
+
+- name: Shrimp Rice Noodle or Ho Fun
+  number: 67
+  pt:
+  qt: $10.25
+
+- name: Chicken Rice Noodle or Ho Fun
+  number: 68
+  pt:
+  qt: $9.25
+
+- name: Beef Rice Noodle or Ho Fun
+  number: 69
+  pt:
+  qt: $10.25
+
+- name: Young Chow Rice Noodle or Ho Fun
+  number: 70
+  pt:
+  qt: $12.85
+
+
+- name: Singapore Rice Noodle or Ho Fun
+  number: 71
+  pt:
+  qt: $10.50

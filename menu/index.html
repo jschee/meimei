@@ -1,0 +1,234 @@
+---
+title: "Mei Mei Chinese Restaurant - Menu"
+layout: home
+---
+<div class="menu-category">
+  <div class="menu-2up">
+    <div class="column-left">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Soups</span></h1></div>
+
+      <table>
+        <tr>
+          <th style="width: 70%"></th>
+          <th style="width: 15%" align='right'>Pt.</th>
+          <th style="padding-left: 5%; width: 15%" align='right'>Qt.</th>
+        </tr>
+      {% for dish in site.data.soups %}
+        <tr>
+          {% if dish.spicy == true %}
+            <td align='left' style="width: 80%; color: red"><span style="font-weight: 800; padding-right: 0.5rem;">{{dish.number}}.</span>  {{ dish.name }}
+           {{ dish.pepper }}
+          {% else %}
+            <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">
+              {{dish.number}}.</span>  {{ dish.name }}
+          {% endif %}
+          </td>
+          <td align='right' style="font-weight: 800; width: 15%">{{ dish.pt }}</td>
+          {% if dish.spicy == true %}
+            <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%; color: red">{{ dish.qt }}</td>
+          {% else %}
+            <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%;">{{ dish.qt }}</td>
+          {% endif %}
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+    <div class="column-right">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Appetizers</span></h1></div>
+      <div style="text-align: right; font-weight: 800;">
+        <span></span>
+        <span style="padding-left: 15px;">Per portion</span>
+      </div>
+      {% for appetizer in site.data.appetizers %}
+      <div style="display: flex; justify-content: space-between">
+        <div style="width: 70%; text-align: left">
+          <span style="font-weight: 800; padding-right: 0.5rem">{{appetizer.number}}.</span> {{ appetizer.name }}
+        </div>
+
+        <div style="width: 25%, text-align: right">
+          <strong>{{ appetizer.pt }}</strong>
+          <strong style="padding-left: 15px;">{{ appetizer.qt }}</strong>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="menu-2up">
+    <div class="column-left">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Chow Mein <span style="font-size: 1.2rem;">(Fried Noodles)</span></span></h1></div>
+      <table>
+        <tr>
+          <th style="width: 70%"></th>
+          <th style="width: 15%" align='right'>Pt.</th>
+          <th style="padding-left: 5%; width: 15%" align='right'>Qt.</th>
+        </tr>
+      {% for dish in site.data.chow-mein %}
+        <tr>
+          <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }}</td>
+          <td align='right' style="font-weight: 800; width: 15%">{{ dish.pt }}</td>
+          <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%">{{ dish.qt }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+    <div class="column-right">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Chop Suey</span></h1></div>
+
+      <table>
+        <tr>
+          <th style="width: 70%"></th>
+          <th style="width: 15%" align='right'>Pt.</th>
+          <th style="padding-left: 5%; width: 15%" align='right'>Qt.</th>
+        </tr>
+      {% for dish in site.data.chop-suey %}
+        <tr>
+          <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }}</td>
+          <td align='right' style="font-weight: 800; width: 15%">{{ dish.pt }}</td>
+          <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%">{{ dish.qt }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+  </div>
+  <div class="menu-2up">
+    <div class="column-left">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Fried Rice</span></h1></div>
+      <table>
+        <tr>
+          <th style="width: 70%"></th>
+          <th style="width: 15%" align='right'>Pt.</th>
+          <th style="padding-left: 5%; width: 15%" align='right'>Qt.</th>
+        </tr>
+      {% for dish in site.data.friedrice %}
+        <tr>
+          <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }}</td>
+          <td align='right' style="font-weight: 800; width: 15%">{{ dish.pt }}</td>
+          <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%">{{ dish.qt }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+    <div class="column-right">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Egg Foo Young</span></h1></div>
+      <table style="white-space: nowrap">
+        <tr>
+          <th style="width: 70%"></th>
+          <th align='right'>Per portion.</th>
+        </tr>
+      {% for dish in site.data.efy %}
+        <tr>
+          <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }}</td>
+          <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%">{{ dish.qt }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+  </div>
+  <div class="menu-2up">
+    <div class="column-left">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Sweet & Sour</span></h1></div>
+      <table>
+        <tr>
+          <th style="width: 70%"></th>
+          <th style="width: 15%" align='right'>Pt.</th>
+          <th style="padding-left: 5%; width: 15%" align='right'>Qt.</th>
+        </tr>
+      {% for dish in site.data.sweet-and-sour %}
+        <tr>
+          <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }}</td>
+          <td align='right' style="font-weight: 800; width: 15%">{{ dish.pt }}</td>
+          <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%">{{ dish.qt }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+    <div class="column-right">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Lo Mein</span></h1></div>
+      <table style="white-space: nowrap">
+        <tr>
+          <th style="width: 70%"></th>
+          <th align='right'>Per portion.</th>
+        </tr>
+      {% for dish in site.data.lomein %}
+        <tr>
+          <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }}</td>
+          <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%">{{ dish.qt }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+  </div>
+  <div class="menu-2up">
+    <div class="column-left">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Rice Noodles</span></h1></div>
+      <table >
+        <tr>
+          <th style="width: 70%"></th>
+          <th align='right' style="white-space: nowrap">Per portion.</th>
+        </tr>
+      {% for dish in site.data.ricenoodles %}
+        <tr>
+          <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }}</td>
+          <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%">{{ dish.qt }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+    <div class="column-right">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Combinations Platter</span></h1></div>
+      <table style="white-space: nowrap">
+        <tr>
+          <th style="width: 70%"></th>
+          <th align='right'>Per portion.</th>
+        </tr>
+      {% for dish in site.data.combo %}
+        <tr>
+          {% if dish.spicy == true %}
+          <td align='left' style="width: 80%; color: red"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }} {{dish.pepper}}</td>
+          {% else %}
+          <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }}</td>
+          {% endif %}
+
+          <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%">{{ dish.qt }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+  </div>
+  <div class="menu-2up">
+    <div class="column-left">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Chicken</span></h1></div>
+      <table>
+        <tr>
+          <th style="width: 70%"></th>
+          <th style="width: 15%" align='right'>Pt.</th>
+          <th style="padding-left: 5%; width: 15%" align='right'>Qt.</th>
+        </tr>
+      {% for dish in site.data.seafood %}
+        <tr>
+          <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }}</td>
+          <td align='right' style="font-weight: 800; width: 15%">{{ dish.pt }}</td>
+          <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%">{{ dish.qt }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+    <div class="column-right">
+      <div class="category-name"><h1 style="margin-bottom: 0;"><span class="category">Seafood</span></h1></div>
+      <table>
+        <tr>
+          <th style="width: 70%"></th>
+          <th style="width: 15%" align='right'>Pt.</th>
+          <th style="padding-left: 5%; width: 15%" align='right'>Qt.</th>
+        </tr>
+      {% for dish in site.data.chicken %}
+        <tr>
+          <td align='left' style="width: 80%"><span style="font-weight: 800; padding-right: 0.5rem">{{dish.number}}.</span>  {{ dish.name }}</td>
+          <td align='right' style="font-weight: 800; width: 15%">{{ dish.pt }}</td>
+          <td align='right' style="font-weight: 800;padding-left: 0.6em; width: 15%">{{ dish.qt }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+  </div>
+</div>

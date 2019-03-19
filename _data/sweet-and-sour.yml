@@ -1,0 +1,20 @@
+- name: Sweet & Sour Pork
+  number: 58
+  pt: $4.75
+  qt: $9.45
+
+
+- name: Sweet & Sour Wonton
+  number: 59
+  pt: $4.50
+  qt: $8.95
+
+- name: Sweet & Sour Shrimp
+  number: 60
+  pt: $7.25
+  qt: $12.25
+
+- name: Sweet & Sour Chicken
+  number: 61
+  pt: $5.60
+  qt: $11.15
