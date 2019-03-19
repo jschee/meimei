@@ -1,0 +1,50 @@
+- name: Shrimp w. Pepper and Onion
+  number: 81
+  pt: $7.25
+  qt: $14.45
+
+- name: Shrimp with Bean Sprouts
+  number: 82
+  pt: $7.25
+  qt: $14.45
+
+- name: Shrimp with Pepper and Tomato
+  number: 83
+  pt: $7.25
+  qt: $14.45
+
+- name: Shrimp with Bok Choy
+  number: 84
+  pt: $7.25
+  qt: $14.45
+
+- name: Chow Har Ding
+  number: 85
+  pt: $7.25
+  qt: $14.45
+
+- name: Shrimp with Lobster Sauce
+  number: 86
+  pt: $7.25
+  qt: $14.45
+
+- name: Fried Shrimp Cantonese (per portion)
+  number: 87
+  pt:
+  qt: $12.25
+
+
+- name: Shrimp with Mushrooms (per portion)
+  number: 88
+  pt:
+  qt: $14.45
+
+- name: Fresh Lobster Cantonese (per portion)
+  number: 89
+  pt:
+  qt: $21.95
+
+- name: Shrimp with Broccoli
+  number: 90
+  pt: $7.25
+  qt: $14.45

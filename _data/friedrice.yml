@@ -1,0 +1,45 @@
+- name: Plain Fried Rice (No meat)
+  number: 42A
+  pt: $2.40
+  qt: $4.80
+
+- name: Roast Pork Fried Rice
+  number: 42
+  pt: $4.10
+  qt: $8.05
+
+- name: Shrimp Fried Rice
+  number: 43
+  pt: $6.20
+  qt: $12.35
+
+- name: Beef Fried Rice
+  number: 44
+  pt: $5.60
+  qt: $11.15
+
+- name: Chicken Fried Rice
+  number: 45
+  pt: $4.80
+  qt: $9.55
+
+- name: Vegetable Fried Rice
+  number: 46
+  pt: $3.90
+  qt: $7.75
+
+
+- name: Subgum Fried Rice
+  number: 47
+  pt: $5.10
+  qt: $10.15
+
+- name: Young Chow Fried Rice
+  number: 48
+  pt: $6.45
+  qt: $12.85
+
+- name: Lobster Fried Rice
+  number: 49
+  pt: $9.05
+  qt: $18.05

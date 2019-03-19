@@ -1,0 +1,42 @@
+- name: Chicken Egg Drop
+  number: 1
+  pt: $1.80
+  qt: $3.60
+
+
+- name: Chicken Rice or Chicken Noodle
+  number: 2
+  pt: $1.80
+  qt: $3.60
+
+- name: Roast Pork Wonton
+  number: 3
+  pt: $2.00
+  qt: $4.00
+
+- name: Young Chow Wonton
+  number: 4
+  pt:
+  qt: $5.25
+
+- name: Chinese Vegetable Meat-Egg
+  number: 5
+  pt:
+  qt: $4.25
+
+- name: Roast Pork Yat Gaw Mein
+  number: 6
+  pt:
+  qt: $4.25
+
+- name: Hot and Sour Soup
+  number: 7
+  pt:
+  qt: $5.50
+  spicy: true
+  pepper: 🌶
+
+- name: Chicken Corn Soup
+  number: 8
+  pt:
+  qt: $5.50

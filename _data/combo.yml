@@ -1,0 +1,37 @@
+- name: Chicken Chow Mein
+  number: No1
+  pt:
+  qt: $7.75
+
+- name: Shrimp Chow Mein
+  number: No2
+  pt:
+  qt: $9.55
+
+- name: Pepper Steak with Onion
+  number: No3
+  pt:
+  qt: $9.55
+
+- name: Shrimp w. Lobster Sauce
+  number: No4
+  pt:
+  qt: $9.95
+
+- name: BBQ Spare Ribs (5)
+  number: No5
+  pt:
+  qt: $10.25
+
+- name: Roast Pork Egg Foo Young
+  number: No6
+  pt:
+  qt: $9.25
+
+
+- name: General Tso's Chicken
+  number: No7
+  pt:
+  qt: $9.95
+  spicy: true
+  pepper: 🌶

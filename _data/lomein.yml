@@ -1,0 +1,20 @@
+- name: Vegetable Lo Mein
+  number: 62
+  pt:
+  qt: $7.80
+
+
+- name: Roast Pork Lo Mein
+  number: 63
+  pt:
+  qt: $8.60
+
+- name: Chicken, Shrimp or Beef Lo Mein
+  number: 64
+  pt:
+  qt: $10.25
+
+- name: Young Chow Lo Mein
+  number: 64A
+  pt:
+  qt: $12.85

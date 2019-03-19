@@ -225,7 +225,7 @@ main {
   @include border-box;
   @include clearfix;
   display: block;
-  padding: 0 0.8rem 4rem;
+  padding: 0 0.8rem;
   text-align: left;
   background: $color-body;
 }
@@ -270,12 +270,6 @@ main {
   }
 }
 
-.copyright {
-  font: 0.75rem / 1.2 $font-sans;
-  margin: 3rem 0 0;
-  color: $color-white-text;
-}
-
 // UTLITY CLASSES
 .flush {
   margin: 0;
@@ -311,7 +305,7 @@ main {
 
 
 
-// HOME PAGE
+// Home Page ——————————————————————————————— •
 
 
 .home-introduction {
@@ -326,8 +320,19 @@ main {
   }
 
   .home-header {
-    padding: 1.3rem 0; text-align: center;
-    border-bottom: 2px dotted #F12625
+    padding: 1.3rem 0;
+    text-align: center;
+    border-bottom: 2px dotted #F12625;
+  }
+
+  .home-sendoff {
+    width: 100%;
+    text-align: center;
+    color: #F12625;
+    font-size: 3em;
+    @include media(small) {
+      display: none;
+    }
   }
 
   .home-contact {
@@ -349,25 +354,34 @@ main {
     margin-top: 20px;
 
     .addr-input {
-      width: 100%;
+      width: 95%;
       height: 2.5rem;
       border-radius: 5px;
       border-style: none;
       box-shadow: inset 0 1px 5px rgba(0,0,0,0.2) !important;
       margin-bottom: 1rem;
-      padding-left: 0.3rem;
+      text-align: center;
+      font-size: 18px;
     }
+
+    .addr-input:focus{
+      box-shadow: 0 0 0 0.125em rgba(251, 217, 111, 0.35);
+      border: 2px solid rgba(251, 217, 111, 1.00);
+      outline:none;
+    }
+
     .addr-submit {
       display: flex;
       justify-content: center;
       align-items: center;
       background: #FCE49E;
       color: #5193B3;
-      width: 100%;
+      width: 95%;
       border-radius: 5px;
       font-family: $font-sans;
       font-size: 18px;
       font-weight: 700;
+      letter-spacing: 0.06em;
       padding: 0.8em 0;
       border-style: none;
       border: 0;
@@ -383,6 +397,8 @@ main {
     }
   }
 
+
+
   @include media(medium) {
     padding: 1rem 1.5rem 1rem;
   }
@@ -395,6 +411,7 @@ main {
 .home-content {
   float: center;
   width: 100%;
+  padding-bottom: 4em;
   p {
     font-family: $font-sans;
     color: $color-text;
@@ -409,8 +426,128 @@ main {
     width: 75%;
   }
 
-  .home-testimonials {
-    margin-bottom: 1rem;
+  @include media(small) {
+    padding-bottom: 0;
+  }
+}
+
+// Menu page ——————————————————————————————— •
+.menu-category {
+  max-width: 50em;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 22px;
+  margin: 0 auto;
+  .category-name {
+    color: #F12625;
+    margin-bottom: 0.3em;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    .category {
+      background: $color-body;
+      padding-right: 8px;
+      @include media(small) {
+        padding: 0 14px;
+      }
+    }
+  }
+  .category-name:after {
+    content: ' ';
+    display: block;
+    top: 44%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    border-bottom: 5px dotted $color-red-text;
+  }
+  .menu-1up{
+    width: 100%;
+  }
+  .menu-2up {
+    @include media(medium) {
+      display: flex;
+      .column-left {
+        width: 50%;
+        padding-bottom: 0.8rem;
+      }
+      .column-right {
+        width: 50%;
+        padding-left: 5%;
+        padding-bottom: 0.8rem;
+      }
+    }
+  }
+  @include media(small) {
+    font-size: 1.0rem;
+  }
+  .column-left {
+    @include media(small) {
+      padding-bottom: 0.8rem;
+    }
+  }
+  .column-right {
+    @include media(small) {
+      padding-bottom: 0.8rem;
+    }
+  }
+}
+
+// Extended footer ——————————————————————————————— •
+
+.copyright {
+  font: 0.75rem / 1.2 $font-sans;
+  margin: 3rem 0 0;
+  color: $color-white-text;
+}
+
+.schedule-mobile {
+  display: none;
+  h1{
+    color: RGBA(252, 228, 158, 1.00);
+  }
+  @include media(small) {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: RGBA(81, 147, 179, 1.00);
+    padding: 2em 0 0 0;
+  }
+}
+
+
+.facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  color: rgba(68, 105, 176, 1.00);
+  width: 95%;
+  border-radius: 5px;
+  font-family: $font-sans;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border: 1px solid rgba(68, 105, 176, 1.00);
+  border-bottom: 4px solid rgba(60, 91, 150, 1.00);
+  outline: none;
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 10px 0;
+
+  @include media(small){
+    width: 50%
+  }
+
+  &:hover {
+    background: rgba(60, 91, 150, 0.4);
+    color: white;
+  }
+  &:active {
+    border: none;
   }
 }
 
@@ -443,3 +580,17 @@ main {
     padding-bottom: 0.5rem;
   }
 }
+
+
+
+  //   @include media(medium) {
+  //     display: flex;
+  //     .column-left {
+  //       width: 50%;
+  //     }
+  //     .column-right {
+  //  d     padding-left: 5%;
+  //       width: 50%;
+  //     }
+  //   }
+  // }

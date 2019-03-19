@@ -1,0 +1,40 @@
+- name: Vegetable Egg Foo Young
+  number: 50
+  pt:
+  qt: $5.00
+
+- name: Beef Egg Foo Young
+  number: 51
+  pt:
+  qt: $6.50
+
+- name: Roast Pork Egg Foo Young
+  number: 52
+  pt:
+  qt: $5.95
+
+- name: Mushroom Egg Foo Young
+  number: 53
+  pt:
+  qt: $5.95
+
+- name: Chicken Egg Foo Young
+  number: 54
+  pt:
+  qt: $5.95
+
+- name: Shrimp Egg Foo Young
+  number: 55
+  pt:
+  qt: $7.65
+
+
+- name: Cantonese Egg Foo Young
+  number: 56
+  pt:
+  qt: $6.75
+
+- name: Lobster Egg Foo Young
+  number: 57
+  pt:
+  qt: $12.95

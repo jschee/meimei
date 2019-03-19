@@ -4,7 +4,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 destination: public
-exclude: [public, Rakefile, README.md]
+exclude: [public, Rakefile, README.md, Gemfile, Gemfile.lock]
 
 
 markdown: kramdown
@@ -14,3 +14,8 @@ plugins:
 sass:
   style:    :compressed
   sass_dir: assets/stylesheets
+
+
+# jekyll_get:
+#   data: menu
+#   json: 'menu.json'

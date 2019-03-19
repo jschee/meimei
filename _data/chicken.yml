@@ -1,0 +1,30 @@
+- name: Chicken w. Pepper & Tomato
+  number: 91
+  pt: $5.80
+  qt: $11.15
+
+
+- name: Chicken Almond Ding
+  number: 92
+  pt: $5.80
+  qt: $11.15
+
+- name: Moo Goo Gai Pan
+  number: 93
+  pt: $5.80
+  qt: $11.15
+
+- name: Fried Chicken Cantonese (per portion)
+  number: 94
+  pt:
+  qt: $9.75
+
+- name: Chicken w. Broccoli
+  number: 95
+  pt: $6.00
+  qt: $11.95
+
+- name: Fried Chicken w. Garlic Sauce
+  number: 96
+  pt:
+  qt: $9.75

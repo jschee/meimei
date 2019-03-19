@@ -1,0 +1,56 @@
+- name: Chicken Chow Mein
+  number: 21
+  pt: $4.00
+  qt: $7.95
+
+- name: Roast Pork Chow Mein
+  number: 22
+  pt: $4.00
+  qt: $7.95
+
+- name: Vegetable Chow Mein
+  number: 23
+  pt: $4.00
+  qt: $7.95
+
+- name: Beef Chow Mein
+  number: 24
+  pt: $5.60
+  qt: $11.15
+
+- name: Shrimp Chow Mein
+  number: 25
+  pt: $6.20
+  qt: $12.35
+
+- name: Subgum Chicken Chow Mein
+  number: 26
+  pt: $5.00
+  qt: $9.95
+
+
+- name: Subgum Shrimp Chow Mein
+  number: 27
+  pt: $6.30
+  qt: $12.55
+
+- name: White Meat Chicken Chow Mein
+  number: 28
+  pt: $5.10
+  qt: $10.15
+
+- name: Mei Mei Chow Mein
+  number: 29
+  pt: $7.35
+  qt: $14.65
+
+- name: Cantonese Chow Mein (Soft Noodles) (per portion)
+  number: 30
+  pt:
+  qt: $11.95
+
+- name: Lobster Chow Mein
+  number: 31
+  pt: $9.05
+  qt: $18.05
+

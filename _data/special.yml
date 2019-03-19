@@ -1,0 +1,33 @@
+- name: Spare Ribs w. Black Bean Sauce
+  number: 97
+  pt:
+  qt: $12.25
+  description: Spare ribs chopped in small pieces, prepared w. garlic sace & Chinese black bean sauce. A truly different flavor.
+
+- name: Chow Har Kew
+  number: 98
+  pt:
+  qt: $12.25
+  description: Fried jumbo shrimps dipped in egg batter, sauteed w. mushrooms, water chestnuts, bamboo shoots, snow pea pods & choice Chinese vegetables.
+
+- name: Butterfly Shrimps
+  number: 99
+  pt:
+  qt: $12.25
+  description: Fried shrimps embodied in bacon Chinese style, topped w. cracked almonds & rich spicy tomato sauce.
+
+- name: Boneless Chicken Cantonese
+  number: 100
+  pt:
+  qt: $12.25
+  description: Fried boneless breast of chicken Chinese style, over fried noodles, covered w. selected Chinese vegetables.
+
+- name: Eggplant w. Garlic Sauce
+  number: 101
+  pt:
+  qt: $9.75
+
+- name: Fried Chicken Cantonese (per portion)
+  number: 94
+  pt:
+  qt: $9.75

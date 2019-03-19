@@ -1,0 +1,47 @@
+- name: Pepper Steak with Onion
+  number: 72
+  pt: $6.00
+  qt: $11.95
+
+- name: Beef or Roast Pork with Bean Sprouts
+  number: 73
+  pt: $6.00
+  qt: $11.95
+
+- name: Beef or Pork w. Pepper & Tomato
+  number: 74
+  pt: $6.00
+  qt: $11.95
+
+- name: Beef or Roast Pork w. Bok Toy
+  number: 75
+  pt: $6.00
+  qt: $11.95
+
+- name: Char Sue Ding
+  number: 76
+  pt: $5.70
+  qt: $11.35
+
+- name: Beef or Roast Pork w. Mushrooms (per portion)
+  number: 77
+  pt:
+  qt: $12.75
+
+
+- name: Beef or Roast Pork w. Oyster Sauce (per portion)
+  number: 78
+  pt:
+  qt: $12.75
+
+- name: Beef or Roast Pork w. Snow Peas (per portion)
+  number: 79
+  pt:
+  qt: $13.25
+
+- name: Beef with Broccoli
+  number: 80
+  pt: $6.95
+  qt: $13.85
+
+

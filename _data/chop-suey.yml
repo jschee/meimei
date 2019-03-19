@@ -1,0 +1,50 @@
+- name: Vegetable Chop Suey
+  number: 32
+  pt: $4.00
+  qt: $7.95
+
+- name: Pork Chop Suey
+  number: 33
+  pt: $4.30
+  qt: $8.55
+
+- name: Beef Chop Suey
+  number: 34
+  pt: $5.60
+  qt: $11.15
+
+- name: Shrimp Chop Suey
+  number: 35
+  pt: $6.20
+  qt: $12.35
+
+- name: Chicken Chop Suey
+  number: 36
+  pt: $5.00
+  qt: $9.95
+
+- name: Roast Pork Chop Suey
+  number: 37
+  pt: $5.00
+  qt: $9.95
+
+
+- name: Subgum Pork Chop Suey
+  number: 38
+  pt: $5.00
+  qt: $9.95
+
+- name: Subgum Chicken Chop Suey
+  number: 39
+  pt: $5.20
+  qt: $10.35
+
+- name: Subgum Shrimp Chop Suey
+  number: 40
+  pt: $6.45
+  qt: $12.85
+
+- name: Lobster Chop Suey
+  number: 41
+  pt: $9.05
+  qt: $18.05
