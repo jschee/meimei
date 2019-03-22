@@ -551,6 +551,12 @@ main {
   }
 }
 
+.designby {
+  float: right;
+  @include media(small) {
+    float: none;
+  }
+}
 
 // MAX-WIDTH/TEXTUAL PAGES
 .page-content--max-width {
